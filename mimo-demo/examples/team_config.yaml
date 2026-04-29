@@ -1,0 +1,32 @@
+# 团队配置示例
+team:
+  name: "Backend Team"
+  members: 20
+
+review:
+  # 审查的文件类型
+  extensions:
+    - .py
+    - .js
+    - .ts
+    - .go
+    - .java
+
+  # 忽略的目录
+  ignore:
+    - node_modules
+    - __pycache__
+    - .git
+    - venv
+    - dist
+
+  # 严重程度阈值（低于此分数会阻断 PR）
+  blocking_score: 60
+
+  # 自动评论 PR
+  auto_comment: true
+
+  # 通知渠道
+  notify:
+    - slack
+    - email
